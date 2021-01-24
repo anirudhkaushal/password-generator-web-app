@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator</title>
+</head>
+<body>
+
+    <header>
+        <h1>PASSWORD GENERATOR</h1>
+    </header>
+
+    <div class="pw-container">
+        <div class="pw-header">
+            <div class="pw">
+                <span id="pw"></span>
+                <button id="copy">Copy</button>
+            </div>
+        </div>
+        <div class="pw-body">
+            <div class="form-control">
+                <label for="len">Password Length</label>
+                <input id="len" value="20" type="number" min="4" max="70">
+            </div>
+            <div class="form-control">
+                <label for="upper">Contain Uppercase Letters</label>
+                <input id="upper" type="checkbox">
+            </div>
+            <div class="form-control">
+                <label for="lower">Contain Lowercase Letters</label>
+                <input id="lower" type="checkbox">
+            </div>
+            <div class="form-control">
+                <label for="number">Contain Numbers</label>
+                <input id="number" type="checkbox">
+            </div>
+            <div class="form-control">
+                <label for="symbol">Contain Symbols</label>
+                <input id="symbol" type="checkbox">
+            </div>
+            <button class="generate" id="generate">
+                Generate Password
+            </button>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>Made by Anirudh Kaushal</p>
+    </footer>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
